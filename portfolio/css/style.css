@@ -2,6 +2,7 @@
 
 /* header */
 #main{
+    width: 100%;
     background: #fff url(../img/top.png) no-repeat center/cover;
     height: 100vh;
     object-fit: cover;
@@ -51,14 +52,14 @@ h2{
 }
 .profile_txt{
     font-size: 18px;
-    font-family: Zen Maru Gothic;
     position: relative;
 }
 .profile_txt p{
+    font-family: Zen Maru Gothic;
     margin-top: 45px;
     padding-right: 20px;
 }
-.Myprofile{
+.Myprofile-btn{
     position: absolute;
     text-align: center;
     width: 150px;
@@ -67,11 +68,33 @@ h2{
     bottom: 46px;
     right: 20px;
     padding: 7px;
-    background-color: #FBEBEB;
-    transition: all .4s ease-in-out;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
 }
-.Myprofile:hover{
-    box-shadow: 0 4px 6px -1px #ccc;
+.Myprofile-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.Myprofile-btn:hover {
+    color: #fff;
+}
+
+.Myprofile-btn:hover::after {
+    transform: scaleX(1);
 }
 
 /* Works */
@@ -112,13 +135,40 @@ h3{
 }
 .viewmore{
     position: absolute;
-    right: 0;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    right: 0px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
 }
-.viewmore :hover{
-    transition: all .4s ease-in-out;
-    box-shadow: 0 4px 6px -1px #ccc;
+.viewmore::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.viewmore:hover {
+    color: #fff;
 }
 
+.viewmore:hover::after {
+    transform: scaleX(1);
+}
 /**/
 #Contact{ background-color: #DDDAC7;
 }
@@ -201,6 +251,7 @@ h3{
     justify-content: space-between;
     font-family: Zen Maru Gothic;;
     background-color: #fff;
+    position: relative;
 }
 .work_about dt{
     font-size: 22px;
@@ -259,12 +310,41 @@ h3{
 }
 .works_page_viewmore{
     position: absolute;  
-    right: -150px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    right: -170px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
 }
-.works_page_viewmore :hover{
-    transition: all .4s ease-in-out;
-    box-shadow: 0 4px 6px -1px #ccc;
+.works_page_viewmore::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
 }
+.works_page_viewmore:hover {
+    color: #fff;
+}
+
+.works_page_viewmore:hover::after {
+    transform: scaleX(1);
+}
+
 /* タブ切り替え */
 /* 非表示に */
 .toggle-checkbox { display: none;
@@ -355,6 +435,7 @@ h3{
 .workpage_back{
     width: 1100px;
     margin: auto;
+    position: relative;
     padding-bottom: 50px;
     background-color: #fff;
 }
@@ -410,20 +491,40 @@ h4{
     padding-bottom: 50px;
 }
 .workpage_title_back{
+    position: absolute;  
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
     width: 150px;
     height: 40px;
-    margin: auto;
-    margin-top: 50px;
-    line-height: 40px;
     border-radius: 5px;
-    font-size: 20px;
-    font-family: Zen Maru Gothic;
-    font-weight: lighter;
-    text-align: center;
-    background-color: #FBEBEB;
-    transition: all .4s ease-in-out;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+.workpage_title_back::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.workpage_title_back:hover {
+    color: #fff;
 }
 
-.workpage_title_back:hover{
-    box-shadow: 0 4px 6px -1px #ccc;
+.workpage_title_back:hover::after {
+    transform: scaleX(1);
 }

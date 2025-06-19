@@ -1,0 +1,530 @@
+/* loading */
+
+/* header */
+#main{
+    width: 100%;
+    background: #fff url(../img/top.png) no-repeat center/cover;
+    height: 100vh;
+    object-fit: cover;
+}
+.header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Sawarabi Mincho;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.header ul{
+    display: flex;
+    font-size: 25px;
+}
+.header li{ padding-left: 50px;
+}
+h1{ font-size: 30px;
+}
+
+/* profile */
+.profile_back{ 
+    background-color: #DDDAC7;
+    padding: 75px 0;
+}
+#profile{ 
+    padding: 50px 0;
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Zen Maru Gothic;
+}
+#profile h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: Sawarabi Mincho;
+}
+.about{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.profile_txt{
+    font-size: 18px;
+    position: relative;
+}
+.profile_txt p{
+    font-family: Zen Maru Gothic;
+    margin-top: 45px;
+    padding-right: 20px;
+}
+.Myprofile-btn{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    bottom: 46px;
+    right: 20px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+.Myprofile-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.Myprofile-btn:hover {
+    color: #fff;
+}
+
+.Myprofile-btn:hover::after {
+    transform: scaleX(1);
+}
+
+/* Works */
+#Works{
+    width: 1100px;
+    margin: 75px auto 50px;
+    position: relative;
+}
+#Hobby{
+    width: 1100px;
+    margin:0 auto 75px;
+    position: relative;
+}
+.box{
+    background-color: #D8B3B3;
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    top: 12px;
+    left: -210px;
+}
+h3{
+    font-size: 25px;
+    font-family: Sawarabi Mincho;
+}
+.Works_img , .Hobby_img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.img{
+    box-shadow:0px 0px 5px #ccc;
+}
+#Works p , #Hobby p{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: Zen Maru Gothic;
+}
+.viewmore{
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    right: 0px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+.viewmore::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.viewmore:hover {
+    color: #fff;
+}
+
+.viewmore:hover::after {
+    transform: scaleX(1);
+}
+/**/
+#Contact{ background-color: #DDDAC7;
+}
+#Contact h3{ padding: 50px 0 30px;
+}
+.Contact_txt{ padding-bottom: 50px;
+}
+.Contact_about{
+    background-color: #E5E5E5;
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+/**/
+.footer{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Sawarabi Mincho;
+}
+.footer ul{
+    display: flex;
+    font-size: 22px;
+}
+.footer li{ padding-left: 50px;
+}
+
+/* プロフィールpage */
+.profilepage_back{
+    padding-bottom: 75px;
+    background-color: #DDDAC7;
+}
+.profilepage_back h2{
+    padding: 75px 0;
+    color: #656565;
+    font-family: Sawarabi Mincho;
+    font-weight: lighter;
+}
+.profile_about{
+    width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.pr_contents{
+    font-size: 20px;
+    font-family: Zen Maru Gothic;
+}
+.pr_contents_txt{
+    margin: 30px 0;
+    font-size: 18px;
+}
+.soft{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    display: grid;
+    place-items: center;
+    border: 0.5px #000 solid;
+}
+/* Work.html */
+.workspage_back{ background-color: #DDDAC7;
+}
+.workspage_back h2{
+    padding: 75px 0;
+    font-family: Sawarabi Mincho;
+    font-weight: lighter;
+}
+.works_page_1 , .works_page_2{
+    width: 1000px;
+    margin: auto;
+}
+.work_about{
+    padding: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Zen Maru Gothic;;
+    background-color: #fff;
+    position: relative;
+}
+.work_about dt{
+    font-size: 22px;
+    font-weight: bold;
+}
+.work_about dd{ font-size: 22px;
+}
+.work_about_color{
+    margin-top: 30px;
+    display: flex;
+}
+.color_box{
+    padding-right: 30px;
+    align-items:center;/* 横並び中央 */
+    display: flex;
+}
+.color_box p{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.color_1a , .color_9f , .color_8e , .color_ff
+ , .color_c3 , .color_ff7 , .color_5b , .color_fff , .color_b3 , .color_44
+ , .color_93 , .color_f2{
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+}
+/* works_pageの色 */
+.color_1a{ background-color: #1a3922;
+}
+.color_9f{ background-color: #9f876f;
+}
+.color_8e{ background-color: #8E2323;
+}
+.color_ff{ background-color: #FFF2D5;
+}
+.color_c3{ background-color: #C3CDB7;
+}
+.color_ff7{ background-color: #FFF7E5;
+}
+.color_5b{ background-color: #5BB3D0;
+}
+.color_fff{ 
+    border: 0.3px #000 solid;
+    background-color: #FFFFFF;
+}
+.color_b3{ background-color: #B3A163;
+}
+.color_44{ background-color: #44342A;
+}
+.color_93{ background-color: #93C2B7;
+}
+.color_f2{ background-color: #F29CA6;
+}
+.work_contents{ position: relative;
+}
+.works_page_viewmore{
+    position: absolute;  
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    right: -170px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+.works_page_viewmore::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.works_page_viewmore:hover {
+    color: #fff;
+}
+
+.works_page_viewmore:hover::after {
+    transform: scaleX(1);
+}
+
+/* タブ切り替え */
+/* 非表示に */
+.toggle-checkbox { display: none;
+}
+.toggle-label {
+    display: block;
+    margin: 50px auto ;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-family: Zen Maru Gothic;
+    font-size: 18px;
+    text-align: center;
+}
+/* 隠す */
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+.toggle-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    margin: auto;
+    pointer-events: none;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+/* チェックされたとき：表示 */
+.toggle-checkbox:checked + .toggle-label + .toggle-content {
+    max-height: 5000px; /* 十分大きい値に設定 */
+    opacity: 1;
+    pointer-events: auto;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* hobby.html */
+.hobbypage_back{
+    background-color: #DDDAC7;
+    padding: 75px 0;
+}
+.hobbypage_back h2{
+    padding-bottom: 75px;
+    color: #656565;
+    font-family: Sawarabi Mincho;
+    font-weight: lighter;
+}
+.hobby_about{
+    width: 1100px;
+    margin: auto;
+    background-color: #fff;
+}
+.hobby_contents{ padding-top: 50px;
+}
+.hobby_photo{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+}
+.hobby_toggle-label {
+    display: block;
+    margin: 0 auto 50px;
+    padding: 10px 20px;
+    background-color: #DDDAC7;
+    color: #656565;
+    cursor: pointer;
+    font-family: Zen Maru Gothic;
+    font-size: 18px;
+    text-align: center;
+}/* チェックされたとき：表示 */
+.toggle-checkbox:checked + .hobby_toggle-label + .toggle-content {
+    max-height: 5000px; /* 十分大きい値に設定 */
+    opacity: 1;
+    pointer-events: auto;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+/* カーソル */
+
+
+/* works_　.html */
+#work_contents{
+    background-color: #DDDAC7;
+    padding: 75px 0;
+}
+.workpage_back{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+.workpage_back dl{
+    font-size: 22px;
+    font-family: Zen Maru Gothic;
+}
+h4{
+    font-family: Zen Maru Gothic;
+    font-size: 22px;
+    font-weight: bold;
+}
+.contents_txt{
+    font-family: Zen Maru Gothic;
+}
+.workpage_title{
+    text-align: center;
+}
+.workpage_title dl , .color_contents
+ , .contents_txt , .site_contents{
+    padding-top: 50px;
+}
+.workpage_title dl{
+    padding-bottom: 50px;
+}
+.workpage_contents{
+    padding: 50px 78px 0;
+}
+.workpage_contents dd{
+    padding-top: 10px;
+}
+.workpage_color{
+    padding-top: 10px;
+    display: flex;
+}
+.contents_txt p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.site_contents h4{
+    padding-bottom: 50px;
+}
+.work_page{
+    padding-top: 50px;
+    background-color: #E5E5E5;
+    max-height: 600px;         /* 高さを制限してスクロール可能に */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.work_page_scroll{
+    padding-bottom: 50px;
+}
+.workpage_title_back{
+    position: absolute;  
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 7px;
+    font-family: 'Sawarabi Mincho';
+    border: 1px #D8B3B3 solid;
+    color: #D8B3B3; 
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease;
+}
+.workpage_title_back::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8B3B3;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+    border-radius: 5px;
+}
+.workpage_title_back:hover {
+    color: #fff;
+}
+
+.workpage_title_back:hover::after {
+    transform: scaleX(1);
+}

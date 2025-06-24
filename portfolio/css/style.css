@@ -251,7 +251,6 @@ h3{
     justify-content: space-between;
     font-family: Zen Maru Gothic;;
     background-color: #fff;
-    position: relative;
 }
 .work_about dt{
     font-size: 22px;
@@ -309,12 +308,12 @@ h3{
 .work_contents{ position: relative;
 }
 .works_page_viewmore{
-    position: absolute;  
+    position: relative;
     text-align: center;
     width: 150px;
     height: 40px;
+    left: 300px;
     border-radius: 5px;
-    right: -170px;
     padding: 7px;
     font-family: 'Sawarabi Mincho';
     border: 1px #E4704B solid;

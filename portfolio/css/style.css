@@ -191,7 +191,7 @@ h3{
 }
 .footer ul{
     display: flex;
-    font-size: 22px;
+    font-size: 25px;
 }
 .footer li{ padding-left: 50px;
 }
@@ -449,6 +449,7 @@ h4{
 }
 .contents_txt{
     font-family: Zen Maru Gothic;
+    line-height: 200%;
 }
 .workpage_title{
     text-align: center;
@@ -500,7 +501,7 @@ h4{
     height: 40px;
     border-radius: 5px;
     padding: 7px;
-    font-family: 'Sawarabi Mincho';
+    font-family: 'Hiragino Kaku Gothic Pro';
     border: 1px #E4704B solid;
     color: #E4704B; 
     overflow: hidden;

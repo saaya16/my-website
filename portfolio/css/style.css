@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     font-family: Sawarabi Mincho;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .header ul{
     display: flex;

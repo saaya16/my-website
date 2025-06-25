@@ -11,7 +11,7 @@
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Mincho';
     background-color: rgba(255, 255, 255, 0.8);
 }
 .header ul{
@@ -38,12 +38,12 @@ h2{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
 }
 #profile h3{
     text-align: center;
     font-size: 25px;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Mincho';
 }
 .about{ 
     margin-top: 50px;
@@ -55,7 +55,7 @@ h2{
     position: relative;
 }
 .profile_txt p{
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
     margin-top: 45px;
     padding-right: 20px;
 }
@@ -118,7 +118,7 @@ h2{
 }
 h3{
     font-size: 25px;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Minch'o;
 }
 .Works_img , .Hobby_img{
     margin-top: 50px;
@@ -131,7 +131,7 @@ h3{
 #Works p , #Hobby p{
     margin-top: 50px;
     font-size: 20px;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
 }
 .viewmore{
     position: absolute;
@@ -187,7 +187,7 @@ h3{
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Mincho';
 }
 .footer ul{
     display: flex;
@@ -204,7 +204,7 @@ h3{
 .profilepage_back h2{
     padding: 75px 0;
     color: #656565;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Mincho';
     font-weight: lighter;
 }
 .profile_about{
@@ -218,7 +218,7 @@ h3{
 }
 .pr_contents{
     font-size: 20px;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
 }
 .pr_contents_txt{
     margin: 30px 0;
@@ -237,7 +237,7 @@ h3{
 }
 .workspage_back h2{
     padding: 75px 0;
-    font-family: Sawarabi Mincho;
+    font-family: "Sawarabi Mincho";
     font-weight: lighter;
 }
 .works_page_1 , .works_page_2{
@@ -249,7 +249,7 @@ h3{
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    font-family: Zen Maru Gothic;;
+    font-family: "Zen Maru Gothic;";
     background-color: #fff;
 }
 .work_about dt{
@@ -355,7 +355,7 @@ h3{
     background-color: #fff;
     color: #000;
     cursor: pointer;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
     font-size: 18px;
     text-align: center;
 }
@@ -390,7 +390,7 @@ h3{
 .hobbypage_back h2{
     padding-bottom: 75px;
     color: #656565;
-    font-family: Sawarabi Mincho;
+    font-family: 'Sawarabi Mincho';
     font-weight: lighter;
 }
 .hobby_about{
@@ -405,6 +405,32 @@ h3{
     padding-bottom: 50px;
     justify-content: space-evenly;
 }
+.photo{
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;
+}
+.mask_text{
+    font-size:		20px;
+    font-family: 'Zen Maru Gothic';
+	text-align: 		center;
+	padding-top:    110px;
+	color:			#fff;
+}
+.photo_mask{
+    width:			100%;
+	height:			100%;
+	position:		absolute;
+	top:			0;
+	left:			0;
+	opacity:		0;
+	background-color:	rgba(0,0,0,0.4);
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.photo:hover .photo_mask {
+	opacity:		1;	
+}
 .hobby_toggle-label {
     display: block;
     margin: 0 auto 50px;
@@ -412,7 +438,7 @@ h3{
     background-color: #DDDAC7;
     color: #656565;
     cursor: pointer;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
     font-size: 18px;
     text-align: center;
 }/* チェックされたとき：表示 */
@@ -440,15 +466,15 @@ h3{
 }
 .workpage_back dl{
     font-size: 22px;
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
 }
 h4{
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
     font-size: 22px;
     font-weight: bold;
 }
 .contents_txt{
-    font-family: Zen Maru Gothic;
+    font-family: 'Zen Maru Gothic';
     line-height: 200%;
 }
 .workpage_title{

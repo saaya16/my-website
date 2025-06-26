@@ -336,7 +336,6 @@ h3{
     transform-origin: left center;
     transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
-    border-radius: 5px;
 }
 .works_page_viewmore:hover {
     color: #fff;
@@ -376,7 +375,6 @@ h3{
     pointer-events: none;
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-/* チェックされたとき：表示 */
 .toggle-checkbox:checked + .toggle-label + .toggle-content {
     max-height: 5000px; /* 十分大きい値に設定 */
     opacity: 1;
@@ -443,14 +441,13 @@ h3{
     font-family: 'Zen Maru Gothic';
     font-size: 18px;
     text-align: center;
-}/* チェックされたとき：表示 */
+}
 .toggle-checkbox:checked + .hobby_toggle-label + .toggle-content {
-    max-height: 5000px; /* 十分大きい値に設定 */
+    max-height: 5000px;
     opacity: 1;
     pointer-events: auto;
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
-
 /* カーソル */
 
 
@@ -463,7 +460,7 @@ h3{
     width: 1100px;
     margin: auto;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
     background-color: #fff;
 }
 .workpage_back dl{
@@ -519,19 +516,20 @@ h4{
 .work_page_scroll{
     padding-bottom: 50px;
 }
-.workpage_title_back{
-    position: absolute;  
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    width: 150px;
-    height: 40px;
+.workpage_title_back{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    margin: 10px 0;
+    left: 75px;
+    width: 15%;
+    height: 50px;
+    font-family: 'Zen Maru Gothic';
+    font-size: 20px;
+    color: #E4704B;
     border-radius: 5px;
-    padding: 7px;
-    font-family: 'Hiragino Kaku Gothic Pro';
     border: 1px #E4704B solid;
-    color: #E4704B; 
     overflow: hidden;
     z-index: 1;
     transition: color 0.4s ease;
@@ -548,7 +546,6 @@ h4{
     transform-origin: left center;
     transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
-    border-radius: 5px;
 }
 .workpage_title_back:hover {
     color: #fff;

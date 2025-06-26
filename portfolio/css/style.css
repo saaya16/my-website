@@ -58,6 +58,7 @@ h2{
     font-family: 'Zen Maru Gothic';
     margin-top: 45px;
     padding-right: 20px;
+    line-height: 30px;
 }
 .Myprofile-btn{
     position: absolute;
@@ -223,6 +224,7 @@ h3{
 .pr_contents_txt{
     margin: 30px 0;
     font-size: 18px;
+    line-height: 25px;
 }
 .soft{
     width: 300px;

@@ -30,7 +30,8 @@ h1{ font-size: 30px;
 }
 #profile{ 
     padding: 50px 0;
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -63,11 +64,11 @@ h2{
 .Myprofile-btn{
     position: absolute;
     text-align: center;
+    margin-top: 30px;
     width: 150px;
     height: 40px;
     border-radius: 5px;
-    bottom: 46px;
-    right: 20px;
+    left: 0;
     padding: 7px;
     font-family: 'Sawarabi Mincho';
     border: 1px #E4704B solid;
@@ -88,7 +89,6 @@ h2{
     transform-origin: left center;
     transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
-    border-radius: 5px;
 }
 .Myprofile-btn:hover {
     color: #fff;
@@ -100,12 +100,14 @@ h2{
 
 /* Works */
 #Works{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: 75px auto 50px;
     position: relative;
 }
 #Hobby{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin:0 auto 75px;
     position: relative;
 }
@@ -143,6 +145,7 @@ h3{
     right: 0px;
     padding: 7px;
     font-family: 'Sawarabi Mincho';
+    font-size: 18px;
     border: 1px #E4704B solid;
     color: #E4704B; 
     overflow: hidden;
@@ -161,7 +164,6 @@ h3{
     transform-origin: left center;
     transition: transform 0.4s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
-    border-radius: 5px;
 }
 .viewmore:hover {
     color: #fff;
@@ -179,12 +181,14 @@ h3{
 }
 .Contact_about{
     background-color: #E5E5E5;
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 }
 /**/
 .footer{
+    background-color: #fff;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -209,7 +213,8 @@ h3{
     font-weight: lighter;
 }
 .profile_about{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: auto;
     padding: 50px 0;
     display: flex;
@@ -242,8 +247,9 @@ h3{
     font-family: "Sawarabi Mincho";
     font-weight: lighter;
 }
-.works_page_1 , .works_page_2{
-    width: 1000px;
+.works_page {
+    max-width: 1000px;
+    width: 90%;
     margin: auto;
 }
 .work_about{
@@ -254,6 +260,7 @@ h3{
     font-family: "Zen Maru Gothic;";
     background-color: #fff;
 }
+
 .work_about dt{
     font-size: 22px;
     font-weight: bold;
@@ -275,7 +282,7 @@ h3{
 }
 .color_1a , .color_9f , .color_8e , .color_ff
  , .color_c3 , .color_ff7 , .color_5b , .color_fff , .color_b3 , .color_44
- , .color_93 , .color_f2{
+ , .color_93 , .color_f2 , .color_00{
     border-radius: 3px;
     width: 40px;
     height: 40px;
@@ -307,6 +314,7 @@ h3{
 }
 .color_f2{ background-color: #F29CA6;
 }
+.color_00{ background-color: #fff;}
 .work_contents{ position: relative;
 }
 .works_page_viewmore{
@@ -314,11 +322,13 @@ h3{
     text-align: center;
     width: 150px;
     height: 40px;
-    left: 300px;
+    left: 0;
+    margin-top: 30px;
     border-radius: 5px;
     padding: 7px;
     font-family: 'Sawarabi Mincho';
     border: 1px #E4704B solid;
+    font-size: 18px;
     color: #E4704B; 
     overflow: hidden;
     z-index: 1;
@@ -340,48 +350,9 @@ h3{
 .works_page_viewmore:hover {
     color: #fff;
 }
-
 .works_page_viewmore:hover::after {
     transform: scaleX(1);
 }
-
-/* タブ切り替え */
-/* 非表示に */
-.toggle-checkbox { display: none;
-}
-.toggle-label {
-    display: block;
-    margin: 50px auto ;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    cursor: pointer;
-    font-family: 'Zen Maru Gothic';
-    font-size: 18px;
-    text-align: center;
-}
-/* 隠す */
-.toggle-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease;
-}
-.toggle-content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    margin: auto;
-    pointer-events: none;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-}
-.toggle-checkbox:checked + .toggle-label + .toggle-content {
-    max-height: 5000px; /* 十分大きい値に設定 */
-    opacity: 1;
-    pointer-events: auto;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-}
-
 /* hobby.html */
 .hobbypage_back{
     background-color: #DDDAC7;
@@ -394,7 +365,8 @@ h3{
     font-weight: lighter;
 }
 .hobby_about{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: auto;
     background-color: #fff;
 }
@@ -457,7 +429,8 @@ h3{
     padding: 75px 0;
 }
 .workpage_back{
-    width: 1100px;
+    max-width: 1100px;
+    width: 90%;
     margin: auto;
     position: relative;
     padding-bottom: 75px;
@@ -554,3 +527,74 @@ h4{
 .workpage_title_back:hover::after {
     transform: scaleX(1);
 }
+
+/* @media screen and (max-width: 768px) {
+  .about, .Works_img, .Hobby_img, .hobby_photo {
+    flex-direction: column;
+    align-items: center;
+  }
+  #profile {
+    padding: 50px 0;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile_txt {
+    width: 90%;
+    text-align: left; 
+  }
+
+  .profile_img {
+    width: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .Myprofile-btn {
+    margin: 20px auto 0;
+    position: static;
+    display: block;
+    text-align: center;
+  }
+
+  .img img, .profile_img img, .hobby_photo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header li {
+    padding: 10px 0;
+  }
+  .Works_img .img,
+  .Hobby_img .img {
+    margin-bottom: 30px;
+  }
+  .Works_img .img:last-child,
+  .Hobby_img .img:last-child {
+    margin-bottom: 0;
+  }
+
+  .Myprofile-btn,
+  .viewmore,
+  .works_page_viewmore,
+  .workpage_title_back {
+    position: static;
+    margin: 20px auto 0;
+    display: block;
+    text-align: center;
+  }
+} */

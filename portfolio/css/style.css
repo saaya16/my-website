@@ -23,7 +23,14 @@
 }
 h1{ font-size: 30px;
 }
-
+.catchcopy{
+    text-align: center;
+    color: #484848;
+    font-size: 18px;
+    font-family: 'Sawarabi Mincho';
+    position: relative;
+    top: 120px;
+}
 /* profile */
 .profile_back{ 
     background-color: #DDDAC7;
@@ -42,7 +49,7 @@ h2{
     font-weight: bold;
     font-family: 'Zen Maru Gothic';
 }
-#Works h3 , #Hobby h3{
+#Works h3 , #Photograph h3 , #illustration h3{
     font-family: 'Sawarabi Mincho';
     font-size: 30px;
 }
@@ -107,10 +114,16 @@ h2{
 #Works{
     max-width: 1100px;
     width: 90%;
-    margin: 75px auto 50px;
+    margin: 75px auto 75px;
     position: relative;
 }
-#Hobby{
+#Photograph{
+    max-width: 1100px;
+    width: 90%;
+    margin:0 auto 75px;
+    position: relative;
+}
+#illustration{
     max-width: 1100px;
     width: 90%;
     margin:0 auto 75px;
@@ -128,7 +141,7 @@ h3{
     font-size: 25px;
     font-family: 'Sawarabi Minch';
 }
-.Works_img , .Hobby_img{
+.Works_img , .Photograph_img , .illustration_img{
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -136,7 +149,7 @@ h3{
 .img{
     box-shadow:0px 0px 5px #ccc;
 }
-#Works p , #Hobby p{
+#Works p , #Photograph p , #illustration p{
     margin-top: 50px;
     font-size: 20px;
     font-family: 'Zen Maru Gothic';
@@ -355,7 +368,7 @@ h3{
 .works_page_viewmore:hover::after {
     transform: scaleX(1);
 }
-/* hobby.html */
+/* Photograph.html  illustration.html */
 .hobbypage_back{
     background-color: #DDDAC7;
     padding: 75px 0;
@@ -381,7 +394,6 @@ h3{
 }
 .photo{
 	overflow:		hidden;
-	margin:			10px 8px 10px 16px;
 	position:		relative;
 }
 #popup1 , #popup2 , #popup3 ,#popup4 ,#popup5 ,#popup6,
